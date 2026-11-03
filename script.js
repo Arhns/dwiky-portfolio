@@ -155,7 +155,7 @@ function renderResume() {
     row.append(link);
     contact.append(row);
   });
-  side.append(contact);
+  if (Object.keys(cv.contact).length) side.append(contact);
   const education = node('section', 'cv-section');
   education.append(node('h3', '', 'Education'), node('strong', '', cv.education.school), node('p', '', cv.education.degree));
   side.append(education);
