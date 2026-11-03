@@ -1,1 +1,16 @@
-{"name":"dwiky-portfolio","version":"1.0.0","private":true,"type":"module","engines":{"node":">=20"},"scripts":{"start":"node scripts/serve.mjs","dev":"node scripts/serve.mjs","build":"node scripts/build.mjs","preview":"node scripts/serve.mjs dist","check":"node --check script.js && node --check public/portfolio-data.js"}}
+{
+  "name": "dwiky-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist",
+    "check": "node scripts/check.mjs"
+  }
+}
