@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+  <title>Dwiky Arhansa — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="portfolio" id="portfolio" data-period="day">
+    <header class="topbar">
+      <a class="wordmark" href="#home" aria-label="Dwiky Arhansa, beranda"><span class="wordmark-icon">✳</span> dwiky<span>arhansa</span></a>
+      <div class="topbar-note"><span class="status-dot"></span> PORTFOLIO INTERAKTIF <span class="note-divider">·</span> <span id="greeting">Selamat datang</span></div>
+      <button class="sound-toggle" id="lighting-toggle" aria-label="Ubah mode pencahayaan" title="Ubah mode pencahayaan"><span>☼</span><span class="toggle-label">AUTO LIGHT</span></button>
+    </header>
+
+    <section class="intro" id="home">
+      <p class="eyebrow"><span>✦</span> DWIKY ARHANSA / JAKARTA</p>
+      <h1>Halo, aku Dwiky.<br /><em>Selamat datang di ruangku.</em></h1>
+      <p class="intro-copy">Product / UI-UX Designer yang suka merancang pengalaman digital yang terasa intuitif dan berdampak. Jelajahi project dan perjalananku di sini.</p>
+    </section>
+
+    <section class="room-wrap" aria-label="Kamar pixel art interaktif">
+      <div class="room" id="room">
+        <img class="room-art" src="public/bedroom.png" alt="Ilustrasi kamar kolektor yang nyaman dengan meja komputer, tempat tidur, dan jendela" />
+        <div class="day-wash"></div><div class="night-vignette"></div>
+        <div class="window-glass" aria-hidden="true"><i class="wind-leaf leaf-one">✦</i><i class="wind-leaf leaf-two">✧</i><i class="wind-leaf leaf-three">✳</i></div>
+        <div class="window-glow" aria-hidden="true"></div>
+        <div class="tv-flicker" aria-hidden="true"></div>
+        <div class="floor-reflection" aria-hidden="true"></div>
+        <div class="lamp-glow" aria-hidden="true"></div>
+        <div class="pc-glow" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="monitor-screen" aria-label="Jam lokal"><span class="monitor-time" id="clock">--:--</span><span class="monitor-date" id="date">LOADING</span><span class="monitor-caption">IT'S YOUR TIME TO CREATE</span></div>
+        <div class="character" role="img" aria-label="Karakter pixel art sedang duduk santai di kursi"></div>
+        <button class="hotspot monitor-hotspot" data-panel="projects" aria-label="Buka project di monitor"><span class="hotspot-label">LIHAT PROJECT <b>↗</b></span></button>
+        <button class="hotspot book-hotspot" data-panel="resume" aria-label="Buka CV dari buku"><span class="hotspot-label">BUKA CV <b>↗</b></span></button>
+        <button class="hotspot window-hotspot" data-panel="about" aria-label="Tentang saya"><span class="hotspot-label">TENTANGKU <b>↗</b></span></button>
+        <div class="room-hint"><span class="hint-cursor">↖</span> KLIK BENDA DI KAMAR UNTUK MENJELAJAH</div>
+      </div>
+      <div class="room-caption"><span>MY ROOM, MY LITTLE UNIVERSE</span><span class="live-time"><i></i> <span id="period-label">LIGHTS ON</span> <b id="caption-time">--:--</b></span></div>
+    </section>
+
+    <footer class="footer"><span>PRODUCT DESIGN · UI/UX · VISUAL STORYTELLING</span><span>JAKARTA, INDONESIA <span class="footer-star">✳</span></span></footer>
+
+    <div class="panel-backdrop" id="panel-backdrop" hidden>
+      <section class="info-panel" role="dialog" aria-modal="true" aria-labelledby="panel-title">
+        <button class="panel-close" id="panel-close" aria-label="Tutup">×</button>
+        <p class="eyebrow" id="panel-kicker">EXPLORING MY SPACE</p>
+        <h2 id="panel-title">Project pilihan</h2>
+        <p id="panel-copy">Beberapa hal yang sedang kubuat.</p>
+        <div class="panel-content" id="panel-content"></div>
+      </section>
+    </div>
+  </main>
+  <script src="public/portfolio-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
